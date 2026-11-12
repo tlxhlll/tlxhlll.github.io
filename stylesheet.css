@@ -211,17 +211,18 @@ span.highlight {
 }
 
 .pub-thumb .video-overlay {
-  position: absolute;
-  inset: 0;
   width: 100%;
-  height: 100%;
 }
 
 .pub-thumb .video-overlay video {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
+}
+
+.pub-thumb .video-overlay + img {
+  display: none;
 }
 
 /* Mobile academic profile: compact identity, readable papers, one-page scrolling. */
