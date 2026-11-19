@@ -205,6 +205,20 @@ span.highlight {
   overflow: hidden;
 }
 
+/* Frame the CoachSI rollout (right panel) inside the publication thumbnail. */
+.coachsi-preview {
+  display: block;
+  aspect-ratio: 4 / 3;
+}
+.coachsi-preview video {
+  position: absolute;
+  width: 236%;
+  max-width: none;
+  left: -122%;
+  top: -33%;
+  pointer-events: none;
+}
+
 .pub-thumb img {
   display: block;
   width: 100%;
